@@ -1787,7 +1787,8 @@ int main(int argc, char **argv)
 	while(p.GetState() != QUIT) 
 	{
 		p.yylex();
-		cout << p.YYText() << " " << p.GetDescription().c_str() << " "<< p.YYLeng() << endl;
+		//cout << p.YYText() << " " << p.GetDescription().c_str() << " "<< p.YYLeng() << endl;
+		cout << p.YYText() << " " << p.GetDescription().c_str() << endl;
 	}
 
 	return 0;
